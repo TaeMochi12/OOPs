@@ -14,7 +14,7 @@ public:
         imag = i;
     }
 
-    Complex operator+(Complex const &obj)
+    Complex operator+(Complex const &obj)   // const: so that the original object can't be changed, &:so that there is no need of creating a copy of the object in case of large objects
     {
         Complex res;
         res.real = real + obj.real;
